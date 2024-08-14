@@ -7,7 +7,7 @@ function main() {
 }
 
 function gameLoop() {
-    for (i = 1; i <= 5; i++) {
+    //for (i = 1; i <= 5; i++) {
         user = getUserChoice(i)
         computer = getComputerChoice()
         console.log(user)
@@ -27,7 +27,7 @@ function gameLoop() {
                 alert("You won bro")
             }
         }
-    }
+    //}
 }
 
 function handleResults() {
