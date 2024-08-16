@@ -4,16 +4,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 
 <body>
-    <div id="input-section">
-        <p>Rock Paper Scissors game</p>
-        <button type="submit" id="submit" onclick="main()">Start</button>
-    </div>
-    <div id="output-section">
 
+    <div class="container">
+        <div class="game-area">
+            <button id="rock" onclick="main('ROCK')">Rock</button>
+            <button id="paper"onclick="main('PAPER')">Paper</button>
+            <button id="scissors"onclick="main('SCISSORS')">Scissors</button>
+        </div>
+        
+<div class="container2">
+  <div class="radio-wrapper">
+    <input class="input" name="btn" id="value-1" type="radio" onclick="main('ROCK')">
+    <div class="btn">
+      <span aria-hidden="">_</span>Rock
+      <span class="btn__glitch" aria-hidden="">_Cyber🦾</span>
+      <label class="number">r1</label>
+    </div>
+  </div>
+  <div class="radio-wrapper">
+    <input class="input" name="btn" id="value-2" checked="true" type="radio" onclick="main('PAPER')">
+    <div class="btn">
+      _Paper<span aria-hidden="">_</span>
+      <span class="btn__glitch" aria-hidden="">_R_a_d_i_o_</span>
+      <label class="number">r2</label>
+    </div>
+  </div>
+  <div class="radio-wrapper">
+    <input class="input" name="btn" id="value-3" type="radio" onclick="main('SCISSORS')">
+    <div class="btn">
+      Scissors<span aria-hidden=""></span>
+      <span class="btn__glitch" aria-hidden="">Buttons_</span>
+      <label class="number">r3</label>
+    </div> 
+  </div>
+</div>
+
+
+        <div class="score-area">
+            <h2>Score
+                <br>
+                You - Computer
+            </h2>
+            <p id="score">0</p>
+        </div>
     </div>
     <script src="rock_paper_scissors.js"></script>
     <!-- <script>
